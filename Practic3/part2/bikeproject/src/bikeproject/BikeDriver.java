@@ -15,7 +15,7 @@ public class BikeDriver {
 		bike4.printDescription();
 
 		// Шаги 8-9: меняем высоту столба bike1 с 22 на 20 и выводим значения на экран
-		bike1.setPostHeight(20);
+		bike1.setPostHeight(15);
 		System.out.println("\n--- bike1 после изменения высоты столба ---");
 		bike1.printDescription();
 	}//end method main

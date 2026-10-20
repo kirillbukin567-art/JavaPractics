@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09adac9f-4211-4680-a8a8-8b0165349e48" name="Changes" comment="" />
+    <list default="true" id="09adac9f-4211-4680-a8a8-8b0165349e48" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/bikeproject/src/bikeproject/BikeDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/part2/bikeproject/src/bikeproject/BikeDriver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/bikeproject/src/bikeproject/BikeDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/part2/bikeproject/src/bikeproject/BikeDriver.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
