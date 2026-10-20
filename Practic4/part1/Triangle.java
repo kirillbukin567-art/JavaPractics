@@ -1,4 +1,4 @@
-// Треугольник — наследник GeometricObject (Задание 1)
+// Треугольник — наследник GeometricObject (Задания 1 и 2)
 public class Triangle extends GeometricObject {
     private double side1 = 1.0;
     private double side2 = 1.0;
@@ -8,8 +8,13 @@ public class Triangle extends GeometricObject {
     public Triangle() {
     }
 
-    // Конструктор с тремя сторонами
-    public Triangle(double side1, double side2, double side3) {
+    // Конструктор с тремя сторонами.
+    // throws сообщает: внутри может быть выброшено IllegalTriangleException
+    public Triangle(double side1, double side2, double side3) throws IllegalTriangleException {
+        // Правило: сумма любых двух сторон должна быть больше третьей
+        if (side1 + side2 <= side3 || side1 + side3 <= side2 || side2 + side3 <= side1) {
+            throw new IllegalTriangleException(side1, side2, side3);
+        }
         this.side1 = side1;
         this.side2 = side2;
         this.side3 = side3;
