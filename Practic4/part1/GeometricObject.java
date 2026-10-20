@@ -2,7 +2,8 @@ import java.util.Date;
 
 // Абстрактный класс: общие свойства и поведение всех геометрических фигур.
 // Создавать объекты прямо из него нельзя, только из его наследников.
-public abstract class GeometricObject {
+// Comparable<GeometricObject> означает, что фигуры можно сравнивать между собой (Задание 3).
+public abstract class GeometricObject implements Comparable<GeometricObject> {
     private String color = "white";   // цвет (по умолчанию белый)
     private boolean filled;           // закрашена ли фигура
     private Date dateCreated;         // дата и время создания объекта
@@ -49,4 +50,20 @@ public abstract class GeometricObject {
     public abstract double getArea();
 
     public abstract double getPerimeter();
+
+    // Сравнение фигур по площади: отрицательное число — эта фигура меньше,
+    // 0 — равны, положительное — эта фигура больше
+    @Override
+    public int compareTo(GeometricObject o) {
+        return Double.compare(getArea(), o.getArea());
+    }
+
+    // Статический метод: возвращает ту из двух фигур, у которой площадь больше
+    public static GeometricObject max(GeometricObject o1, GeometricObject o2) {
+        if (o1.compareTo(o2) > 0) {
+            return o1;
+        } else {
+            return o2;
+        }
+    }
 }
